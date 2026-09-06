@@ -1,4 +1,4 @@
-# Machenike L16W Center (机械师智能控制中心 - 现代化重构版)
+# Machenike L16W Center (机械师智能控制中心)
 
 <p align="center">
   <img src="src-tauri/icons/128x128.png" width="96" height="96" alt="Machenike L16W Center Logo" />
