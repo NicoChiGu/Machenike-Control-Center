@@ -1,0 +1,21 @@
+[package]
+name = "machenike-l16w-center"
+version = "1.0.0"
+description = "Machenike L16W Modern Control Center"
+authors = ["User"]
+edition = "2021"
+
+[lib]
+name = "machenike_l16w_center_lib"
+crate-type = ["staticlib", "cdylib", "rlib"]
+
+[build-dependencies]
+tauri-build = { version = "2", features = [] }
+
+[dependencies]
+tauri = { version = "2", features = ["tray-icon"] }
+tauri-plugin-shell = "2"
+serde = { version = "1.0", features = ["derive"] }
+serde_json = "1.0"
+tokio = { version = "1", features = ["sync", "time", "rt-multi-thread"] }
+hidapi = { version = "2.6", default-features = false }

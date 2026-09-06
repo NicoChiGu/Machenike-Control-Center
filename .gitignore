@@ -1,0 +1,96 @@
+# ==========================================
+# 依赖目录 (Dependencies)
+# ==========================================
+node_modules/
+.pnp
+.pnp.js
+
+# ==========================================
+# 前端构建输出与缓存 (Frontend Build Outputs & Cache)
+# ==========================================
+dist/
+dist-ssr/
+.vite/
+*.local
+
+# ==========================================
+# Tauri & Rust 构建目录 (Rust / Tauri Outputs)
+# ==========================================
+target/
+src-tauri/target/
+src-tauri/gen/schemas/
+gen/schemas/
+**/*.rs.bk
+
+# ==========================================
+# 原厂与大型二进制文件 (Vendor Binaries & Executables)
+# ==========================================
+# 原厂 EXE 二进制（逆向分析参考用，不纳入代码仓库）
+/MachenikeControlCenter.exe
+*.exe
+
+# 驱动与关键资源白名单（确保系统驱动与打包资源不被误忽略）
+!/driver/WTIOportDrv.sys
+!/src-tauri/resources/WTIOportDrv.sys
+!*.sys
+
+# ==========================================
+# Python 逆向与调试脚本缓存 (Python Cache)
+# ==========================================
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+env/
+venv/
+.venv/
+ENV/
+.pytest_cache/
+
+# ==========================================
+# 编辑器与 IDE 配置 (IDE & Editors)
+# ==========================================
+.vscode/
+.idea/
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+*.sw?
+*.sublime-project
+*.sublime-workspace
+
+# ==========================================
+# 环境配置与敏感信息 (Environment Configs)
+# ==========================================
+.env
+.env.local
+.env.*.local
+!.env.example
+
+# ==========================================
+# 日志与调试输出 (Logs & Debugging)
+# ==========================================
+*.log
+logs/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+lerna-debug.log*
+
+# ==========================================
+# 系统产生的文件 (OS Generated Files)
+# ==========================================
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+ehthumbs_vista.db
+Thumbs.db
+Thumbs.db:encryptable
+Desktop.ini
+$RECYCLE.BIN/
